@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WForYou</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="web/styles.css">
+  <!-- Aplica tema e idioma guardados antes de pintar, para evitar parpadeos -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("wfy-tema");
+        if (!t) t = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        document.documentElement.dataset.theme = t;
+        var l = localStorage.getItem("wfy-idioma");
+        if (!l) l = (navigator.language || "es").slice(0, 2) === "en" ? "en" : "es";
+        document.documentElement.lang = l;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__left">
+        <a class="logo" href="#grupo" aria-label="WForYou">WFor<span>You</span></a>
+        <div class="toggles">
+          <div class="pill" role="group" data-i18n-aria="idioma">
+            <button type="button" data-lang="es">ES</button>
+            <button type="button" data-lang="en">EN</button>
+          </div>
+          <div class="pill" role="group" data-i18n-aria="tema">
+            <button type="button" data-theme-btn="light" data-i18n-aria="temaClaro">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            </button>
+            <button type="button" data-theme-btn="dark" data-i18n-aria="temaOscuro">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header__right">
+        <nav class="nav" data-i18n-aria="secciones">
+          <a href="#grupo" data-i18n="navGrupo"></a>
+          <a href="#equipo" data-i18n="navEquipo"></a>
+          <a href="#progreso" data-i18n="navProgreso"></a>
+          <a href="#avisos" data-i18n="navAvisos"></a>
+          <a href="#objetivos" data-i18n="navObjetivos"></a>
+        </nav>
+        <div class="sync">
+          <span id="ultima-sync" class="muted"></span>
+          <a id="btn-actualizar" class="btn btn--outline" href="#" data-i18n="actualizar"></a>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <p class="estado" id="cargando" data-i18n="cargando"></p>
+    </main>
+
+  </div>
+
+  <!-- Términos de la API de Blizzard (2.13): Blizzard como fuente de los datos, sin dar a entender respaldo -->
+  <footer class="pie">
+    <div class="pie__in">
+      <div class="pie__top">
+        <div class="pie__marca">
+          <a class="pie__logo" href="#grupo" aria-label="WForYou">WFor<span>You</span></a>
+          <span class="pie__copy">© <span id="anio">2026</span> WForYou</span>
+        </div>
+        <nav class="pie__enlaces" aria-label="Legal">
+          <a href="privacidad.html" data-i18n="privacidad"></a>
+          <a href="https://www.blizzard.com/en-us/legal/a2989b50-5f16-43b1-abec-2ae17cc09dd6/blizzard-developer-api-terms-of-use" target="_blank" rel="noopener" data-i18n="terminosApi"></a>
+        </nav>
+      </div>
+      <div class="pie__textos">
+        <p class="pie__fuente" data-i18n="fuenteDatos"></p>
+        <p class="pie__legal" data-i18n="noAfiliado"></p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="arriba" class="arriba" data-i18n-aria="volverArriba" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script type="module" src="web/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "descripcion": "Lista objetivo de Guerrero Protección (nombre del archivo: clase-especialización en inglés). Cambia los 0 por IDs de objeto reales; 'fuente' es opcional y se usa en 'Dónde ir juntos'.",
+  "piezas": {
+    "HEAD": [
+      {
+        "id": 0,
+        "fuente": "[Mazmorra · Jefe]"
+      }
+    ],
+    "CHEST": [
+      {
+        "id": 0,
+        "fuente": "[Misión]"
+      }
+    ],
+    "OFF_HAND": [
+      0
+    ],
+    "MAIN_HAND": [
+      {
+        "id": 0,
+        "fuente": "[Mazmorra · Jefe]"
+      }
+    ]
+  }
+}

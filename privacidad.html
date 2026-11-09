@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WForYou · Privacidad</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="web/styles.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("wfy-tema") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        var l = localStorage.getItem("wfy-idioma") || ((navigator.language || "es").slice(0, 2) === "en" ? "en" : "es");
+        document.documentElement.dataset.theme = t;
+        document.documentElement.lang = l;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="logo" href="./">WFor<span>You</span></a>
+    </header>
+
+    <main>
+      <article class="legal" data-solo-idioma="es">
+        <h1>Política de privacidad</h1>
+        <p>WForYou es una web sin ánimo de lucro que un grupo de amigos usa para seguir el progreso de sus personajes de World of Warcraft. No está afiliada ni respaldada por Blizzard Entertainment.</p>
+
+        <h2>Qué datos se muestran</h2>
+        <ul>
+          <li>Solo los personajes que el administrador del grupo ha añadido a la lista.</li>
+          <li>Datos públicos del juego obtenidos de la API de Battle.net de Blizzard: nombre y apellido, tipo de servidor, nivel, clase, raza, especialización, equipo, profesiones, retrato o icono, y la ficha de los objetos.</li>
+          <li>Un historial de progreso (nivel, piezas objetivo y profesiones) y un registro de avisos, calculados a partir de esos datos.</li>
+        </ul>
+        <p>No se recogen cuentas, contraseñas, correos ni ningún otro dato personal de quien visita la web. Nunca se pide ni se guarda la contraseña de Battle.net.</p>
+
+        <h2>Cuánto tiempo se guardan</h2>
+        <p>Los datos se actualizan cada hora. Ningún dato procedente de la API de Blizzard se conserva más de 30 días: el historial y los avisos más antiguos se borran automáticamente, y los datos se guardan sin historial de versiones.</p>
+
+        <h2>Cómo pedir que se borren tus datos</h2>
+        <p>Si uno de los personajes es tuyo y no quieres que aparezca, pídeselo al administrador del grupo. Al quitarlo de la lista, todos sus datos, incluidos el historial y los avisos, se eliminan en la siguiente sincronización. Si un personaje deja de existir en Blizzard, sus datos también se eliminan.</p>
+
+        <h2>Tu navegador</h2>
+        <p>La web guarda en tu propio navegador (almacenamiento local) solo el idioma y el tema que eliges (y, en el caso del administrador, una marca para mostrarle sus botones), para recordarlos la próxima vez. No usa cookies de seguimiento ni publicidad.</p>
+
+        <h2>Servicios de terceros</h2>
+        <ul>
+          <li>La web está alojada en GitHub Pages, que puede registrar datos técnicos de las visitas según su propia política de privacidad.</li>
+          <li>Los avisos se envían a un canal privado de Discord del grupo.</li>
+          <li>Las imágenes de retratos e iconos se cargan desde los servidores de Blizzard.</li>
+        </ul>
+
+        <h2>Datos «tal cual»</h2>
+        <p>Los datos se muestran tal y como los proporciona Blizzard, sin garantía de exactitud ni de disponibilidad. Esta política es coherente con la <a href="https://www.blizzard.com/es-es/legal/a4380ee5-5c8d-4e3b-83b7-ea26d01a9918/blizzard-entertainment-online-privacy-policy" rel="noopener">política de privacidad de Blizzard</a>.</p>
+
+        <p><a href="./">Volver a WForYou</a></p>
+      </article>
+
+      <article class="legal" data-solo-idioma="en">
+        <h1>Privacy policy</h1>
+        <p>WForYou is a non-profit website that a group of friends uses to follow the progress of their World of Warcraft characters. It is not affiliated with or endorsed by Blizzard Entertainment.</p>
+
+        <h2>What data is shown</h2>
+        <ul>
+          <li>Only the characters that the group's administrator has added to the list.</li>
+          <li>Public game data obtained from Blizzard's Battle.net API: first name and surname, server type, level, class, race, specialization, equipment, professions, portrait or icon, and item details.</li>
+          <li>A progress history (level, target items and professions) and an alert log, calculated from that data.</li>
+        </ul>
+        <p>No accounts, passwords, emails or any other personal data are collected from visitors. Battle.net passwords are never requested or stored.</p>
+
+        <h2>How long it is kept</h2>
+        <p>Data is updated every hour. No data from Blizzard's API is kept for more than 30 days: older history and alerts are deleted automatically, and data is stored without version history.</p>
+
+        <h2>How to have your data removed</h2>
+        <p>If one of the characters is yours and you don't want it to appear, ask the group's administrator. Once it is removed from the list, all of its data, including history and alerts, is deleted on the next sync. If a character no longer exists at Blizzard, its data is deleted too.</p>
+
+        <h2>Your browser</h2>
+        <p>The website stores only your chosen language and theme in your own browser (local storage), plus a flag to show the administrator their buttons, to remember them next time. It does not use tracking cookies or advertising.</p>
+
+        <h2>Third-party services</h2>
+        <ul>
+          <li>The website is hosted on GitHub Pages, which may log technical visit data under its own privacy policy.</li>
+          <li>Alerts are sent to the group's private Discord channel.</li>
+          <li>Portrait and icon images are loaded from Blizzard's servers.</li>
+        </ul>
+
+        <h2>Data "as is"</h2>
+        <p>Data is shown as provided by Blizzard, with no guarantee of accuracy or availability. This policy is consistent with <a href="https://www.blizzard.com/en-us/legal/a4380ee5-5c8d-4e3b-83b7-ea26d01a9918/blizzard-entertainment-online-privacy-policy" rel="noopener">Blizzard's privacy policy</a>.</p>
+
+        <p><a href="./">Back to WForYou</a></p>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

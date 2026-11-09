@@ -1,0 +1,17 @@
+{
+  "name": "wforyou",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "tsx scripts/sync.ts",
+    "anadir": "tsx scripts/anadir-amigo.ts",
+    "check": "tsc --noEmit",
+    "resumen": "tsx scripts/resumen.ts",
+    "comprobar": "tsx scripts/comprobar-api.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0"
+  }
+}

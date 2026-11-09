@@ -1,0 +1,15 @@
+{
+  "region": "eu",
+  "namespaceProfile": "profile-forever-eu",
+  "namespaceStatic": "static-forever-eu",
+  "idiomaAvisos": "es",
+  "avisos": {
+    "subidaNivel": true,
+    "piezaObjetivo": true,
+    "subidaProfesion": true,
+    "umbralProfesion": 25,
+    "resumenSemanal": true
+  },
+  "enlacePerfil": "",
+  "urlWeb": ""
+}
