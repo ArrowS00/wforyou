@@ -1,0 +1,30 @@
+name: Resumen semanal
+
+on:
+  schedule:
+    - cron: "0 19 * * 0"   # domingos a las 19:00 UTC (20:00 en invierno en España)
+  workflow_dispatch:         # para probarlo a mano
+
+permissions:
+  contents: read
+
+jobs:
+  resumen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Recuperar los datos (rama "datos")
+        run: git fetch --depth=1 origin datos && git checkout FETCH_HEAD -- datos
+
+      - name: Enviar resumen a Discord
+        run: npm run resumen
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}

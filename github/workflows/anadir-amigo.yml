@@ -1,0 +1,54 @@
+name: Añadir amigo
+
+on:
+  workflow_dispatch:       # solo pueden lanzarlo usuarios con permiso de escritura (tú)
+    inputs:
+      nombre:
+        description: "Nombre del personaje (p. ej. Arrows)"
+        required: true
+      apellido:
+        description: "Apellido del personaje (p. ej. Skarchh)"
+        required: true
+      objetivo:
+        description: "Clase y especialización, p. ej. warrior-protection o priest-holy (recomendado: la API de Forever no da la especialización)"
+        required: false
+
+permissions:
+  contents: write
+  actions: write           # para lanzar después la sincronización
+
+jobs:
+  anadir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Añadir a config/personajes.json
+        run: npm run anadir -- "$NOMBRE" "$APELLIDO" "$OBJETIVO"
+        env:   # pasados por variables de entorno para evitar inyección de comandos
+          NOMBRE: ${{ inputs.nombre }}
+          APELLIDO: ${{ inputs.apellido }}
+          OBJETIVO: ${{ inputs.objetivo }}
+
+      - name: Guardar el cambio
+        run: |
+          git config user.name "wforyou-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add config/personajes.json
+          git diff --cached --quiet || git commit -m "Añadido ${NOMBRE} ${APELLIDO}"
+          git push
+        env:
+          NOMBRE: ${{ inputs.nombre }}
+          APELLIDO: ${{ inputs.apellido }}
+
+      - name: Sincronizar ya (para que aparezca sin esperar a la próxima hora)
+        run: gh workflow run sincronizar.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}

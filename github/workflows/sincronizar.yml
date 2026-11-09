@@ -1,0 +1,86 @@
+name: Sincronizar personajes
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # cada hora (GitHub puede retrasarlo unos minutos)
+  workflow_dispatch:       # botón "Run workflow" = Actualizar datos (solo quien tenga permiso de escritura)
+  push:                    # al cambiar la web o la configuración se vuelve a publicar
+    branches: [main]
+    paths: ["index.html", "privacidad.html", "web/**", "config/**"]
+
+permissions:
+  contents: write          # para guardar la rama "datos"
+  pages: write             # para publicar la web
+  id-token: write
+
+concurrency:
+  group: datos-wforyou     # evita que dos sincronizaciones escriban a la vez
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Recuperar los datos de la sincronización anterior (rama "datos")
+        run: |
+          if git fetch --depth=1 origin datos 2>/dev/null; then
+            git checkout FETCH_HEAD -- datos
+            git reset -q   # que no queden preparados para commit en main
+          else
+            echo "Primera ejecución: todavía no hay rama de datos"
+          fi
+
+      - name: Descargar datos de Blizzard y avisar a Discord
+        id: sync
+        continue-on-error: true   # si falla, la web se publica igual con los últimos datos buenos
+        run: npm run sync
+        env:
+          BNET_CLIENT_ID: ${{ secrets.BNET_CLIENT_ID }}
+          BNET_CLIENT_SECRET: ${{ secrets.BNET_CLIENT_SECRET }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      # La rama "datos" se reescribe entera en cada ejecución con un único commit:
+      # así Git no conserva copias antiguas de los datos de Blizzard (límite de 30 días).
+      - name: Guardar datos en la rama "datos" (sin historial)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p datos
+          TMP=$(mktemp -d)
+          cp -r datos "$TMP/"
+          cd "$TMP"
+          git init -q -b datos
+          git add datos
+          git -c user.name="wforyou-bot" -c user.email="github-actions[bot]@users.noreply.github.com" \
+            commit -qm "Datos $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git push -q --force "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" datos
+
+      - name: Preparar la web
+        run: |
+          mkdir _site
+          cp -r index.html privacidad.html web config datos _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Marcar el fallo de la sincronización
+        if: steps.sync.outcome == 'failure'
+        run: |
+          echo "::error::La sincronización con la API de Blizzard ha fallado; la web sigue con los últimos datos buenos. Revisa el paso «Descargar datos de Blizzard»."
+          exit 1

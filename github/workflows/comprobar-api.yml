@@ -1,0 +1,35 @@
+name: Comprobar API de Forever
+
+on:
+  workflow_dispatch:
+    inputs:
+      nombre:
+        description: "Nombre de un personaje (opcional, p. ej. Arrows)"
+        required: false
+      apellido:
+        description: "Su apellido (opcional, p. ej. Skarchh)"
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Comprobar qué responde la API
+        run: npm run comprobar
+        env:
+          BNET_CLIENT_ID: ${{ secrets.BNET_CLIENT_ID }}
+          BNET_CLIENT_SECRET: ${{ secrets.BNET_CLIENT_SECRET }}
+          NOMBRE: ${{ inputs.nombre }}
+          APELLIDO: ${{ inputs.apellido }}

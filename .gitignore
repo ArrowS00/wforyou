@@ -1,0 +1,6 @@
+node_modules/
+.env
+# Los datos de Blizzard no se guardan en main: viven en la rama "datos", que se reescribe en cada
+# sincronización sin historial (máximo 30 días de retención, según los términos de la API).
+datos/
+_site/
