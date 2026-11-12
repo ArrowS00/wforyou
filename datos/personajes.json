@@ -1,0 +1,274 @@
+{
+  "fecha": "2026-11-12T09:07:25.980Z",
+  "personajes": [
+    {
+      "clave": "arrows-skarchh",
+      "nombre": "Arrows Skarchh",
+      "ruleset": {
+        "es": "JcJ",
+        "en": "PvP"
+      },
+      "nivel": 23,
+      "clase": {
+        "es": "Guerrero",
+        "en": "Warrior"
+      },
+      "claseId": 1,
+      "imagen": "https://render.worldofwarcraft.com/forever-eu/character/180/11859892-avatar.jpg",
+      "raza": {
+        "es": "Orco",
+        "en": "Orc"
+      },
+      "especializacion": {
+        "es": "Protección",
+        "en": "Protection"
+      },
+      "nivelObjeto": 16,
+      "equipo": [
+        {
+          "ranura": "SHOULDER",
+          "ranuraNombre": {
+            "es": "Hombros",
+            "en": "Shoulders"
+          },
+          "id": 3480,
+          "nombre": {
+            "es": "Sobrehombros de bronce férreos",
+            "en": "Rough Bronze Shoulders"
+          },
+          "calidad": "UNCOMMON"
+        },
+        {
+          "ranura": "SHIRT",
+          "ranuraNombre": {
+            "es": "Camisola",
+            "en": "Shirt"
+          },
+          "id": 6125,
+          "nombre": {
+            "es": "Arnés de camorrista",
+            "en": "Brawler's Harness"
+          },
+          "calidad": "COMMON"
+        },
+        {
+          "ranura": "CHEST",
+          "ranuraNombre": {
+            "es": "Pecho",
+            "en": "Chest"
+          },
+          "id": 2866,
+          "nombre": {
+            "es": "Loriga de bronce férrea",
+            "en": "Rough Bronze Cuirass"
+          },
+          "calidad": "UNCOMMON"
+        },
+        {
+          "ranura": "WAIST",
+          "ranuraNombre": {
+            "es": "Cintura",
+            "en": "Waist"
+          },
+          "id": 271201,
+          "nombre": {
+            "es": "Faja atrófica",
+            "en": "Atrophic Girdle"
+          },
+          "calidad": "RARE"
+        },
+        {
+          "ranura": "LEGS",
+          "ranuraNombre": {
+            "es": "Piernas",
+            "en": "Legs"
+          },
+          "id": 271209,
+          "nombre": {
+            "es": "Leotardos huesóxido",
+            "en": "Bonerust Leggings"
+          },
+          "calidad": "RARE"
+        },
+        {
+          "ranura": "FEET",
+          "ranuraNombre": {
+            "es": "Pies",
+            "en": "Feet"
+          },
+          "id": 6459,
+          "nombre": {
+            "es": "Botines indómitos",
+            "en": "Savage Trodders"
+          },
+          "calidad": "RARE"
+        },
+        {
+          "ranura": "WRIST",
+          "ranuraNombre": {
+            "es": "Muñeca",
+            "en": "Wrist"
+          },
+          "id": 2854,
+          "nombre": {
+            "es": "Brazales de cobre con runas",
+            "en": "Runed Copper Bracers"
+          },
+          "calidad": "UNCOMMON"
+        },
+        {
+          "ranura": "HANDS",
+          "ranuraNombre": {
+            "es": "Manos",
+            "en": "Hands"
+          },
+          "id": 6481,
+          "nombre": {
+            "es": "Guanteletes de Damire",
+            "en": "Dagmire Gauntlets"
+          },
+          "calidad": "UNCOMMON"
+        },
+        {
+          "ranura": "FINGER_1",
+          "ranuraNombre": {
+            "es": "Anillo 1",
+            "en": "Ring 1"
+          },
+          "id": 5351,
+          "nombre": {
+            "es": "Anillo de caza recompensas",
+            "en": "Bounty Hunter's Ring"
+          },
+          "calidad": "UNCOMMON"
+        },
+        {
+          "ranura": "FINGER_2",
+          "ranuraNombre": {
+            "es": "Anillo 2",
+            "en": "Ring 2"
+          },
+          "id": 279867,
+          "nombre": {
+            "es": "Sello del barón asesinado",
+            "en": "Slain Baron's Signet"
+          },
+          "calidad": "UNCOMMON"
+        },
+        {
+          "ranura": "BACK",
+          "ranuraNombre": {
+            "es": "Espalda",
+            "en": "Back"
+          },
+          "id": 6629,
+          "nombre": {
+            "es": "Manteo esporidio",
+            "en": "Sporid Cape"
+          },
+          "calidad": "RARE"
+        },
+        {
+          "ranura": "MAIN_HAND",
+          "ranuraNombre": {
+            "es": "Mano principal",
+            "en": "Main Hand"
+          },
+          "id": 6504,
+          "nombre": {
+            "es": "Espada de ala",
+            "en": "Wingblade"
+          },
+          "calidad": "RARE"
+        },
+        {
+          "ranura": "OFF_HAND",
+          "ranuraNombre": {
+            "es": "Mano secundaria",
+            "en": "Off Hand"
+          },
+          "id": 271218,
+          "nombre": {
+            "es": "Cimitarra sangrevil",
+            "en": "Vileblood Scimitar"
+          },
+          "calidad": "RARE"
+        },
+        {
+          "ranura": "RANGED",
+          "ranuraNombre": {
+            "es": "A distancia",
+            "en": "Ranged"
+          },
+          "id": 217315,
+          "nombre": {
+            "es": "Arco de precisión",
+            "en": "Precision Bow"
+          },
+          "calidad": "UNCOMMON"
+        },
+        {
+          "ranura": "AMMO",
+          "ranuraNombre": {
+            "es": "Munición",
+            "en": "Ammo"
+          },
+          "id": 3464,
+          "nombre": {
+            "es": "Flecha de plumas",
+            "en": "Feathered Arrow"
+          },
+          "calidad": "UNCOMMON"
+        }
+      ],
+      "profesiones": [
+        {
+          "nombre": {
+            "es": "Mining",
+            "en": "Mining"
+          },
+          "nivel": 109,
+          "max": 150
+        },
+        {
+          "nombre": {
+            "es": "Blacksmithing",
+            "en": "Blacksmithing"
+          },
+          "nivel": 94,
+          "max": 150
+        },
+        {
+          "nombre": {
+            "es": "Cooking",
+            "en": "Cooking"
+          },
+          "nivel": 5,
+          "max": 75
+        },
+        {
+          "nombre": {
+            "es": "Fishing",
+            "en": "Fishing"
+          },
+          "nivel": 8,
+          "max": 75
+        },
+        {
+          "nombre": {
+            "es": "First Aid",
+            "en": "First Aid"
+          },
+          "nivel": 64,
+          "max": 150
+        }
+      ],
+      "objetivo": {
+        "lista": "warrior-protection",
+        "total": 0,
+        "conseguidas": [],
+        "ranuras": []
+      }
+    }
+  ]
+}

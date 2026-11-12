@@ -1,0 +1,20 @@
+[
+  {
+    "fecha": "2026-11-10T22:44:44.369Z",
+    "tipo": "nivel",
+    "personaje": "arrows-skarchh",
+    "texto": {
+      "es": "**Arrows Skarchh** ha llegado al nivel **23**",
+      "en": "**Arrows Skarchh** reached level **23**"
+    }
+  },
+  {
+    "fecha": "2026-11-10T17:25:56.927Z",
+    "tipo": "profesion",
+    "personaje": "arrows-skarchh",
+    "texto": {
+      "es": "**Arrows Skarchh** sube Blacksmithing a **94**",
+      "en": "**Arrows Skarchh** raised Blacksmithing to **94**"
+    }
+  }
+]

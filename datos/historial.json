@@ -1,0 +1,66 @@
+[
+  {
+    "fecha": "2026-11-10T09:49:21.368Z",
+    "personajes": {
+      "arrows-skarchh": {
+        "nivel": 22,
+        "objetivo": 0,
+        "profesiones": {
+          "Mining": 103,
+          "Blacksmithing": 72,
+          "Cooking": 1,
+          "Fishing": 5,
+          "First Aid": 64
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-11-10T17:25:56.927Z",
+    "personajes": {
+      "arrows-skarchh": {
+        "nivel": 22,
+        "objetivo": 0,
+        "profesiones": {
+          "Mining": 106,
+          "Blacksmithing": 94,
+          "Cooking": 1,
+          "Fishing": 8,
+          "First Aid": 64
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-11-10T22:44:44.369Z",
+    "personajes": {
+      "arrows-skarchh": {
+        "nivel": 23,
+        "objetivo": 0,
+        "profesiones": {
+          "Mining": 108,
+          "Blacksmithing": 94,
+          "Cooking": 5,
+          "Fishing": 8,
+          "First Aid": 64
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-11-12T01:15:47.249Z",
+    "personajes": {
+      "arrows-skarchh": {
+        "nivel": 23,
+        "objetivo": 0,
+        "profesiones": {
+          "Mining": 109,
+          "Blacksmithing": 94,
+          "Cooking": 5,
+          "Fishing": 8,
+          "First Aid": 64
+        }
+      }
+    }
+  }
+]

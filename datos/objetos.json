@@ -1,0 +1,325 @@
+{
+  "2854": {
+    "nombre": {
+      "es": "Brazales de cobre con runas",
+      "en": "Runed Copper Bracers"
+    },
+    "calidad": "UNCOMMON",
+    "detalle": {
+      "nivel": 19,
+      "nivelRequerido": 14,
+      "ranura": {
+        "es": "Muñeca",
+        "en": "Wrist"
+      },
+      "tipo": {
+        "es": "Mallas",
+        "en": "Mail"
+      },
+      "vinculo": {
+        "es": "Se liga al equiparlo",
+        "en": "Binds when equipped"
+      },
+      "lineas": [
+        {
+          "es": "72 armadura",
+          "en": "72 Armor"
+        },
+        {
+          "es": "+2 fuerza",
+          "en": "+2 Strength"
+        },
+        {
+          "es": "+2 aguante",
+          "en": "+2 Stamina"
+        },
+        {
+          "es": "Durabilidad 30 / 30",
+          "en": "Durability 30 / 30"
+        }
+      ]
+    },
+    "fecha": "2026-11-10T17:25:56.925Z"
+  },
+  "2866": {
+    "nombre": {
+      "es": "Loriga de bronce férrea",
+      "en": "Rough Bronze Cuirass"
+    },
+    "calidad": "UNCOMMON",
+    "detalle": {
+      "nivel": 23,
+      "nivelRequerido": 18,
+      "ranura": {
+        "es": "Pecho",
+        "en": "Chest"
+      },
+      "tipo": {
+        "es": "Mallas",
+        "en": "Mail"
+      },
+      "vinculo": {
+        "es": "Se liga al equiparlo",
+        "en": "Binds when equipped"
+      },
+      "lineas": [
+        {
+          "es": "177 armadura",
+          "en": "177 Armor"
+        },
+        {
+          "es": "+8 aguante",
+          "en": "+8 Stamina"
+        },
+        {
+          "es": "Durabilidad 90 / 90",
+          "en": "Durability 90 / 90"
+        }
+      ]
+    },
+    "fecha": "2026-11-10T17:25:56.772Z"
+  },
+  "3464": {
+    "nombre": {
+      "es": "Flecha de plumas",
+      "en": "Feathered Arrow"
+    },
+    "calidad": "UNCOMMON",
+    "detalle": {
+      "nivel": 35,
+      "nivelRequerido": 0,
+      "ranura": {
+        "es": "Munición",
+        "en": "Ammo"
+      },
+      "tipo": {
+        "es": "Flecha",
+        "en": "Arrow"
+      },
+      "vinculo": null,
+      "lineas": [
+        {
+          "es": "Añade 9,5 daño por segundo",
+          "en": "Adds 9.5 damage per second"
+        }
+      ]
+    },
+    "fecha": "2026-11-12T01:15:47.248Z"
+  },
+  "3480": {
+    "nombre": {
+      "es": "Sobrehombros de bronce férreos",
+      "en": "Rough Bronze Shoulders"
+    },
+    "calidad": "UNCOMMON",
+    "detalle": {
+      "nivel": 22,
+      "nivelRequerido": 17,
+      "ranura": {
+        "es": "Hombro",
+        "en": "Shoulder"
+      },
+      "tipo": {
+        "es": "Mallas",
+        "en": "Mail"
+      },
+      "vinculo": {
+        "es": "Se liga al equiparlo",
+        "en": "Binds when equipped"
+      },
+      "lineas": [
+        {
+          "es": "130 armadura",
+          "en": "130 Armor"
+        },
+        {
+          "es": "+3 fuerza",
+          "en": "+3 Strength"
+        },
+        {
+          "es": "+4 aguante",
+          "en": "+4 Stamina"
+        },
+        {
+          "es": "Durabilidad 50 / 50",
+          "en": "Durability 50 / 50"
+        }
+      ]
+    },
+    "fecha": "2026-11-10T17:25:56.623Z"
+  },
+  "5351": {
+    "nombre": {
+      "es": "Anillo de caza recompensas",
+      "en": "Bounty Hunter's Ring"
+    },
+    "calidad": "UNCOMMON",
+    "detalle": {
+      "nivel": 20,
+      "nivelRequerido": 0,
+      "ranura": {
+        "es": "Dedo",
+        "en": "Finger"
+      },
+      "tipo": {
+        "es": "Misceláneo",
+        "en": "Miscellaneous"
+      },
+      "vinculo": {
+        "es": "Se liga al recogerlo",
+        "en": "Binds when picked up"
+      },
+      "lineas": [
+        {
+          "es": "+3 agilidad",
+          "en": "+3 Agility"
+        },
+        {
+          "es": "+1 aguante",
+          "en": "+1 Stamina"
+        }
+      ]
+    },
+    "fecha": "2026-11-10T09:49:20.304Z"
+  },
+  "6125": {
+    "nombre": {
+      "es": "Arnés de camorrista",
+      "en": "Brawler's Harness"
+    },
+    "calidad": "COMMON",
+    "detalle": {
+      "nivel": 1,
+      "nivelRequerido": 0,
+      "ranura": {
+        "es": "Camisola",
+        "en": "Shirt"
+      },
+      "tipo": {
+        "es": "Misceláneo",
+        "en": "Miscellaneous"
+      },
+      "vinculo": null,
+      "lineas": []
+    },
+    "fecha": "2026-11-10T09:49:19.135Z"
+  },
+  "6459": {
+    "nombre": {
+      "es": "Objeto #6459",
+      "en": "Item #6459"
+    },
+    "calidad": "COMMON",
+    "detalle": null,
+    "fecha": "2026-11-10T22:44:43.960Z"
+  },
+  "6481": {
+    "nombre": {
+      "es": "Objeto #6481",
+      "en": "Item #6481"
+    },
+    "calidad": "COMMON",
+    "detalle": null,
+    "fecha": "2026-11-11T10:12:20.661Z"
+  },
+  "6504": {
+    "nombre": {
+      "es": "Objeto #6504",
+      "en": "Item #6504"
+    },
+    "calidad": "COMMON",
+    "detalle": null,
+    "fecha": "2026-11-12T01:15:47.108Z"
+  },
+  "6629": {
+    "nombre": {
+      "es": "Objeto #6629",
+      "en": "Item #6629"
+    },
+    "calidad": "COMMON",
+    "detalle": null,
+    "fecha": "2026-11-10T22:44:44.090Z"
+  },
+  "217315": {
+    "nombre": {
+      "es": "Arco de precisión",
+      "en": "Precision Bow"
+    },
+    "calidad": "UNCOMMON",
+    "detalle": {
+      "nivel": 27,
+      "nivelRequerido": 23,
+      "ranura": {
+        "es": "A distancia",
+        "en": "Ranged"
+      },
+      "tipo": {
+        "es": "Arco",
+        "en": "Bow"
+      },
+      "vinculo": {
+        "es": "Se liga al recogerlo",
+        "en": "Binds when picked up"
+      },
+      "lineas": [
+        {
+          "es": "20 - 37 Daño",
+          "en": "20 - 37 Damage"
+        },
+        {
+          "es": "Velocidad 2,60",
+          "en": "Speed 2.60"
+        },
+        {
+          "es": "(11,0 daño por segundo)",
+          "en": "(11.0 damage per second)"
+        },
+        {
+          "es": "+3 golpe",
+          "en": "+3 Hit"
+        },
+        {
+          "es": "Durabilidad 60 / 60",
+          "en": "Durability 60 / 60"
+        }
+      ]
+    },
+    "fecha": "2026-11-10T22:44:44.368Z"
+  },
+  "271201": {
+    "nombre": {
+      "es": "Objeto #271201",
+      "en": "Item #271201"
+    },
+    "calidad": "COMMON",
+    "detalle": null,
+    "fecha": "2026-11-10T09:49:19.457Z"
+  },
+  "271209": {
+    "nombre": {
+      "es": "Objeto #271209",
+      "en": "Item #271209"
+    },
+    "calidad": "COMMON",
+    "detalle": null,
+    "fecha": "2026-11-10T09:49:19.620Z"
+  },
+  "271218": {
+    "nombre": {
+      "es": "Objeto #271218",
+      "en": "Item #271218"
+    },
+    "calidad": "COMMON",
+    "detalle": null,
+    "fecha": "2026-11-10T09:49:20.782Z"
+  },
+  "279867": {
+    "nombre": {
+      "es": "Objeto #279867",
+      "en": "Item #279867"
+    },
+    "calidad": "COMMON",
+    "detalle": null,
+    "fecha": "2026-11-10T09:49:20.461Z"
+  }
+}
